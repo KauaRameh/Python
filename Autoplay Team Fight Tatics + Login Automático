@@ -1,0 +1,62 @@
+### Este foi um pequeno projeto focado em entrar automaticamente em sua conta e também jogar infinitamente partidas no Team Fight Tatics
+'Farmando' experiência e emblemas constantemente.
+
+### Requisitos para o funcionamento: Ter a biblioteca Pyautogui intstalada juntamente com o python, Manter a sessão automatica do league of legends desativada
+e usar a resolução 1920 x 1080
+
+### Código:
+
+
+from time import sleep
+import pyautogui as bot
+bot.PAUSE = 1.2
+bot.press('win')
+bot.write('League Of Legends')
+bot.press('enter')
+while True:  
+    a = bot.locateOnScreen('bagulhos.png')
+    if a != None:
+        break
+bot.click(x=369, y=361)
+bot.write('binladenvictor')
+bot.click(x=367, y=442)
+bot.write('kaka123')
+bot.click(x=398, y=798)
+while True:  
+    a = bot.locateOnScreen('botaoiniciarclient.png')
+    if a != None:
+        bot.click(x=a[0]+ a[2] / 2, y=a[1] + a[3] / 2)
+        break
+    a = bot.locateOnScreen('clientelol.png')
+    if a != None:
+        break
+while True:  
+    a = bot.locateOnScreen('jogg.png')
+    if a != None:
+        bot.click(x=a[0]+ a[2] / 2, y=a[1] + a[3] / 2)
+        break       
+while True:  
+    a = bot.locateOnScreen('tfticon.png')
+    if a != None:
+        bot.click(x=a[0]+ a[2] / 2, y=a[1] + a[3] / 2)
+        break
+while True:  
+    a = bot.locateOnScreen('confirm1.png')
+    if a != None:
+        bot.click(x=a[0]+ a[2] / 2, y=a[1] + a[3] / 2)
+        breakfff
+sleep(4)
+while True:
+    bot.PAUSE = 0.4
+    bot.click(x=845, y=931)
+    bot.click(x=946, y=762)
+    bot.click(x=452, y=935)
+    bot.click(x=570, y=933)
+    bot.click(x=800, y=932)
+    bot.click(x=1057, y=936)
+    bot.click(x=1262, y=933)
+    bot.click(x=1457, y=944)
+    bot.click(x=827, y=547)
+    bot.press('f')
+    bot.press('f')
+    bot.press('f')
