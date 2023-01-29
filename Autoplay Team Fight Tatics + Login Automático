@@ -1,8 +1,9 @@
 ### Este foi um pequeno projeto focado em entrar automaticamente em sua conta e também jogar infinitamente partidas no Team Fight Tatics
 'Farmando' experiência e emblemas constantemente.
 
-### Requisitos para o funcionamento: Ter a biblioteca Pyautogui intstalada juntamente com o python, Manter a sessão automatica do league of legends desativada
-e usar a resolução 1920 x 1080
+### Requisitos para o funcionamento: Ter a biblioteca Pyautogui intstalada juntamente com o python, Manter a sessão automatica do league of legends desativada,
+usar a resolução 1920 x 1080 e pôr seu nickname/senha na linha abaixo do ###.
+
 
 ### Código:
 
@@ -18,9 +19,11 @@ while True:
     if a != None:
         break
 bot.click(x=369, y=361)
-bot.write('binladenvictor')
+### PONHA AQUI O SEU NICK
+bot.write('seu nickname')
 bot.click(x=367, y=442)
-bot.write('kaka123')
+### PONHA AQUI A SUA SENHA
+bot.write('sua senha')
 bot.click(x=398, y=798)
 while True:  
     a = bot.locateOnScreen('botaoiniciarclient.png')
